@@ -47,4 +47,4 @@ p = Process(target=produce, args=(q,))
 p.start()
 with sd.OutputStream(latency='high', blocksize=blocksize, dtype='int16', samplerate=fs, callback=callback, channels=1):
     while True:
-        sd.sleep(1000)
+        sd.sleep(100)
